@@ -25,7 +25,7 @@ export const UserItem = () => {
             <Avatar className="h-5 w-5">
               <AvatarImage src={user?.imageUrl} />
               <span className="text-start font-medium line-clamp-1">
-                {user?.fullName}&apos;s Notion
+                {user?.fullName} Notion
               </span>
             </Avatar>
           </div>
@@ -48,13 +48,16 @@ export const UserItem = () => {
             </div>
             <div className="space-y-1">
               <p className="text-sm line-clamp-1">
-                {user?.fullName}&apos's Notion
+                {user?.fullName} Notion
               </p>
             </div>
           </div>
         </div>
         <DropdownMenuSeparator />
-        <DropdownMenuItem asChild className="w-full cursor-pointer text-muted-foreground">
+        <DropdownMenuItem
+          asChild
+          className="w-full cursor-pointer text-muted-foreground"
+        >
           <SignOutButton>Log out</SignOutButton>
         </DropdownMenuItem>
       </DropdownMenuContent>
