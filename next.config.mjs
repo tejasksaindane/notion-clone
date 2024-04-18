@@ -2,7 +2,8 @@
 const nextConfig = {
   images: {
     domains: ["files.edgestore.dev"],
-  }
+  },
+  reactStrictMode: false,
 }
 
 export default nextConfig;
