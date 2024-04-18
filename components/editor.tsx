@@ -10,10 +10,10 @@ interface EditorProps {
   onChange: (value: string) => void;
   initialContent?: string;
   editable?: boolean;
-  editor: BlockNoteEditor;
+  editor?: BlockNoteEditor;
 }
 
-export const Editor: React.FC<EditorProps> = ({
+ const Editor: React.FC<EditorProps> = ({
   onChange,
   initialContent,
   editable,
@@ -50,3 +50,6 @@ export const Editor: React.FC<EditorProps> = ({
     </div>
   );
 };
+
+
+export default Editor;
