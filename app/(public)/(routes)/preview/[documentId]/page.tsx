@@ -70,3 +70,5 @@ const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
 };
 
 export default DocumentIdPage;
+
+//Finally the code is completed
